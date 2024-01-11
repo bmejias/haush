@@ -14,10 +14,11 @@ Create the database with
 CREATE DATABASE todolist;
 ```
 
-Load the SQL file with
+Load the SQL files with
 
 ```sh
 psql -p 5416 -d todolist -f database/todo.sql
+psql -p 5416 -d todolist -f database/insert_data.sql
 ```
 
 ## Running Flask
