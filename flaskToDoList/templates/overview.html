@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tasks overview</title>
+</head>
+<body>
+    <h1>Tasks overview</h1>
+    <ul>
+        {% for task in all_tasks %}
+        <li>{{ task[1] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
