@@ -8,5 +8,5 @@ class Task():
 
 
     def get_tasks(self):
-        self.cursor.execute("SELECT * FROM todo.tasks")
+        self.cursor.execute("SELECT task_name FROM todo.tasks")
         return self.cursor.fetchall()
