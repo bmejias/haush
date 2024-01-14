@@ -8,7 +8,7 @@
     <h1>Tasks overview</h1>
     <ul>
         {% for task in all_tasks %}
-        <li>{{ task[0] }}</li>
+        <li>{{ task['task_name'] }}</li>
         {% endfor %}
     </ul>
 </body>
