@@ -15,5 +15,12 @@ def overview():
     return render_template("overview.html", all_tasks=all_tasks)
 
 
+@app.route('/task/<task_id>')
+def show_task(task_id):
+    task_model = Task()
+    single_task = task_model.get_task(task_id)
+    return render_template("task.html", single_task=single_task)
+
+
 if __name__ == '__main__':
     app.run(debug=True)
